@@ -1,3 +1,7 @@
+.header {
+  margin-bottom: 100px;
+}
+
 .header::before {
   position: absolute;
   top: 0;
@@ -27,9 +31,6 @@
   margin-top: 100px;
   margin-bottom: 185px;
 }
-.header-container__title span {
-  color: #2a2626;
-}
 
 .header-container__img {
   position: absolute;
@@ -49,6 +50,16 @@
   border: none;
 }
 
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.video iframe {
+  margin-top: 30px;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -66,6 +77,9 @@ h1, h2, h3 {
   font-weight: 400;
   line-height: 1.2em;
   color: #fe8a02;
+}
+h1 span, h2 span, h3 span {
+  color: #2a2626;
 }
 
 h1 {

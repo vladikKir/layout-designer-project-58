@@ -1,3 +1,6 @@
+.header {
+  margin-bottom: 100px;
+}
 .header::before {
   position: absolute;
   top: 0;
@@ -29,10 +32,6 @@
 .header-container__title {
   margin-top: 100px;
   margin-bottom: 185px;
-
-  span {
-    color: $dark;
-  }
 }
 .header-container__img {
   position: absolute;
