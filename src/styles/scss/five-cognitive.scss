@@ -1,0 +1,53 @@
+.five-cognitive {
+
+  margin: 0;
+  width: 100vw;
+  background-color: $main-dark;
+}
+
+.five-cognitive__container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 350px);
+  gap: 20px;
+
+  height: 619px;
+  margin: 200px auto;
+}
+
+.five-cognitive__element {
+  padding: 24px;
+  height: 323px;
+  box-sizing: border-box;
+
+  font-weight: 400;
+
+  background-color: $light;
+
+  b {
+    display: block;
+    margin-bottom: 40px;
+
+    font-family: 'Neucha', cursive;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1;
+  }
+}
+
+.five-cognitive__element:nth-child(n + 4) {
+  height: 348px;
+}
+
+.five-cognitive__element:nth-child(1) {
+  padding: 0;
+
+  background-color: inherit;
+
+  .five-cognitive__about {
+    font-size: 52px;
+    span {
+      color: $white;
+    }
+  }
+}
