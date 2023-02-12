@@ -1,0 +1,96 @@
+.cognitive {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+
+  background-color: $light;
+}
+
+.cognitive__main {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  justify-content: flex-start;
+
+  width: 100%;
+
+  margin: 100px 0;
+
+  img {
+    filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
+  }
+}
+
+.cognitive__about {
+  z-index: 100;
+
+  span {
+    color: $dark-half-opacity;
+    font-size: 24px;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+
+    color: $dark;
+  }
+
+  p {
+    color: $dark;
+    font-weight: 400;
+    font-size: 34px;
+    font-family: "Neucha";
+    line-height: 120%;
+  }
+}
+
+.cognitive__title {
+  z-index: 100;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 10px;
+
+  color: $white;
+  font-weight: 700;
+  font-size: 14px;
+
+  font-family: "PT Sans Caption", sans-serif;
+  text-transform: uppercase;
+
+  background-color: $brown;
+}
+
+.cognitive {
+  p {
+    margin-bottom: 100px;
+  }
+}
+
+.cognitive:nth-child(2n) {
+  background-color: $brown;
+
+  .cognitive__about {
+    span {
+      color: $white-half-opacity;
+    }
+
+    h2 {
+      color: $white;
+    }
+  }
+
+  .cognitive__title {
+    color: $brown;
+
+    background-color: $white;
+  }
+
+  p {
+    color: $white;
+  }
+}

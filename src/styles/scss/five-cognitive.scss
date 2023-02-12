@@ -1,7 +1,8 @@
 .five-cognitive {
+  width: 100vw;
 
   margin: 0;
-  width: 100vw;
+
   background-color: $main-dark;
 }
 
@@ -16,9 +17,9 @@
 }
 
 .five-cognitive__element {
-  padding: 24px;
-  height: 323px;
   box-sizing: border-box;
+  height: 323px;
+  padding: 24px;
 
   font-weight: 400;
 
@@ -28,9 +29,10 @@
     display: block;
     margin-bottom: 40px;
 
-    font-family: 'Neucha', cursive;
-    font-size: 64px;
     font-weight: 400;
+    font-size: 64px;
+
+    font-family: "Neucha", cursive;
     line-height: 1;
   }
 }
@@ -46,6 +48,7 @@
 
   .five-cognitive__about {
     font-size: 52px;
+
     span {
       color: $white;
     }
