@@ -82,7 +82,7 @@ span {
   width: 100vw;
 }
 
-@mixin content-background($height) {
+@mixin content-background {
   position: absolute;
 
   display: block;
@@ -91,7 +91,6 @@ span {
   align-items: center;
 
   width: 100vw;
-  height: $height;
   margin: 0;
 
   background-image: url("../images/background.png");
@@ -104,11 +103,13 @@ span {
 }
 
 .header::before {
-  @include content-background(914px);
+  @include content-background;
   top: 0;
   left: 0;
+
+  height: 914px;
 }
 
 .cognitive::before {
-  @include content-background(100%);
+  @include content-background;
 }
